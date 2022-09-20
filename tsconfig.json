@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "module": "System",
+        "outFile": "build/bundle.js"
+    },
+    "include": ["src/*"]
+}
