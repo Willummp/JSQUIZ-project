@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
-        "module": "System",
-        "outFile": "build/bundle.js"
+      "target": "ES5",
+      "outDir": "build/"
     },
-    "include": ["src/*"]
-}
+    "include": ["src"]
+  } 
+  
