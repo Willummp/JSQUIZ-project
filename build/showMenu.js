@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.showMenu = void 0;
+function showMenu() {
+    console.log(' ----- Java Game ----- ');
+    console.log(' 1 - Novo Jogo ');
+    console.log(' 2 - ON / OFF Musica ');
+    console.log(' 3 - Sair do jogo ');
+}
+exports.showMenu = showMenu;
