@@ -9,4 +9,8 @@ class Jogador { // classe jogador
      constructor(nome:string){
         this.nome=nome;
       }
+      public pontuar(pontuar:number){
+        this.pontuacao+=pontuar;
+      }
+
 } export { Jogador }
