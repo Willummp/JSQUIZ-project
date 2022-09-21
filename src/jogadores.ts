@@ -4,17 +4,14 @@
 //TODO: MÉTODO PARA CONTAR A PONTUAÇÃO
 interface NewJogador{
   nome: string;
-  pontuacao: number;
-
 }
 
 class Jogador { // classe jogador
     private nome: string;
-    private pontuacao: number;
+    private pontuacao: number = 0;
       
-     constructor({nome,pontuacao}){
+     constructor(nome:string){
         this.nome=nome;
-        this.pontuacao=pontuacao;
       }
 }
 
