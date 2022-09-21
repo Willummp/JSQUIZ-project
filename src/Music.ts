@@ -1,8 +1,7 @@
 interface NewMusic{
 
 }
-
-export class Music{
+class Music{
     public nameMusic:string;
 
     public menuMusic():void{
@@ -13,4 +12,4 @@ export class Music{
 
     }
     
-}
+} export { Music }
