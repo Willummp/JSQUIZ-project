@@ -2,7 +2,7 @@ import PromptSync = require('prompt-sync')
 import { Jogador } from "./jogadores";
 import { showMenu } from "./showMenu"
 import { Music } from "./Music"
-import {PerguntasRespostas} from './PerguntasRespostas';
+// import {PerguntasRespostas} from './PerguntasRespostas';
 
 try {
 
@@ -10,12 +10,12 @@ const prompt = PromptSync();
 
 //Objetos - Instâncias das Classes
 //const music = new Music();
-const perguntas = new PerguntasRespostas();
-const respostas = new PerguntasRespostas();
+// const perguntas = new PerguntasRespostas();
+// const respostas = new PerguntasRespostas();
 
 //Banco de Dados das Perguntas e Respostas
-perguntas.perguntas = [];//Armazenar As Perguntas
-respostas.respostas = [];//Armazenar As Respostas
+// perguntas.perguntas = [];//Armazenar As Perguntas
+// respostas.respostas = [];//Armazenar As Respostas
 
 //music.filePath = './musicas/trilha-sonora.mp3'; //Caminho do Diretório da Trilha Sonora do Jogo
 

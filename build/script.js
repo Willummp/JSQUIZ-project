@@ -3,16 +3,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var PromptSync = require("prompt-sync");
 var jogadores_1 = require("./jogadores");
 var showMenu_1 = require("./showMenu");
-var PerguntasRespostas_1 = require("./PerguntasRespostas");
+// import {PerguntasRespostas} from './PerguntasRespostas';
 try {
     var prompt_1 = PromptSync();
     //Objetos - Instâncias das Classes
     //const music = new Music();
-    var perguntas = new PerguntasRespostas_1.PerguntasRespostas();
-    var respostas = new PerguntasRespostas_1.PerguntasRespostas();
+    // const perguntas = new PerguntasRespostas();
+    // const respostas = new PerguntasRespostas();
     //Banco de Dados das Perguntas e Respostas
-    perguntas.perguntas = []; //Armazenar As Perguntas
-    respostas.respostas = []; //Armazenar As Respostas
+    // perguntas.perguntas = [];//Armazenar As Perguntas
+    // respostas.respostas = [];//Armazenar As Respostas
     //music.filePath = './musicas/trilha-sonora.mp3'; //Caminho do Diretório da Trilha Sonora do Jogo
     var option = 0;
     do {
@@ -23,12 +23,6 @@ try {
         switch (option) {
             case 1:
                 var nomeJogador = prompt_1(' Digite seu nome: ');
-                if (nomeJogador == null) {
-                    console.log('Valor Inválido, tente novamente !');
-                }
-                else {
-                    //IMPLEMENTAR 
-                }
                 var jogador = new jogadores_1.Jogador(nomeJogador);
                 break;
             case 2:
