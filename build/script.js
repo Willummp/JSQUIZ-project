@@ -3,7 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var PromptSync = require("prompt-sync");
 var jogadores_1 = require("./jogadores");
 var showMenu_1 = require("./showMenu");
-// import {PerguntasRespostas} from './PerguntasRespostas';
+var Music_1 = require("./Music");
+var PerguntasRespostas_1 = require("./PerguntasRespostas");
 try {
     var prompt_1 = PromptSync();
     //Objetos - Instâncias das Classes
@@ -24,13 +25,16 @@ try {
             case 1:
                 var nomeJogador = prompt_1(' Digite seu nome: ');
                 var jogador = new jogadores_1.Jogador(nomeJogador);
+                (0, PerguntasRespostas_1.PergEResp)();
                 break;
             case 2:
                 //music.playSound(option);
                 new Music_1.Music();
-                break;
             case 3:
                 console.log('GAME OVER');
+                break;
+            default:
+                (0, showMenu_1.showMenu)();
                 break;
         }
     } while (option > 0 && option != 3);

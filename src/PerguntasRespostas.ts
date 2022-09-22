@@ -1,6 +1,10 @@
 import { Jogador } from "./jogadores";
 import PromptSync = require('prompt-sync');
 
+
+function PergEResp() {
+    
+
 const prompt = PromptSync();
 
 console.log('O que as variáveis fazem?');
@@ -347,3 +351,5 @@ switch (opcao15) {
         break;
 }
 console.clear();
+}
+export { PergEResp }

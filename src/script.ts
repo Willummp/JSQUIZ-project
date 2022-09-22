@@ -2,7 +2,7 @@ import PromptSync = require('prompt-sync')
 import { Jogador } from "./jogadores";
 import { showMenu } from "./showMenu"
 import { Music } from "./Music"
-// import {PerguntasRespostas} from './PerguntasRespostas';
+import { PergEResp } from './PerguntasRespostas';
 
 try {
 const prompt = PromptSync();
@@ -31,15 +31,18 @@ do {
         case 1:
             const nomeJogador = prompt(' Digite seu nome: ');
             const jogador = new Jogador (nomeJogador);
+            PergEResp();
         break;
 
         case 2:
             //music.playSound(option);
             new Music();
         break;
-
         case 3:
             console.log('GAME OVER');
+        break;
+        default:
+            showMenu()
         break;
     }
 }while (option > 0 && option != 3);
