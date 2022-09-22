@@ -3,6 +3,7 @@ import { Jogador } from "./jogadores";
 import { showMenu } from "./showMenu"
 import { Music } from "./Music"
 import {PerguntasRespostas} from './PerguntasRespostas';
+import { começoJogo } from './inicioJogo';
 
 try {
 
@@ -62,6 +63,7 @@ do {
         case 1:
             const nomeJogador = prompt(' Digite seu nome: ');
             const jogador = new Jogador (nomeJogador);
+            começoJogo();
         break;
 
         case 2:
