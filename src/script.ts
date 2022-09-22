@@ -5,7 +5,6 @@ import { Music } from "./Music"
 // import {PerguntasRespostas} from './PerguntasRespostas';
 
 try {
-
 const prompt = PromptSync();
 
 //Objetos - Instâncias das Classes
@@ -36,16 +35,17 @@ do {
 
         case 2:
             //music.playSound(option);
+            new Music();
         break;
 
         case 3:
             console.log('GAME OVER');
         break;
-        default:
-            console.log('Opção Inválida.')
     }
 }while (option > 0 && option != 3);
 } catch (error) {
     //Caso Ocorra Algum Erro
     console.log(`Opss! Algo de errado aconteceu, tente novamente mais tarde :(\n${error}`);
+    showMenu();
 }
+//TODO : usar o finally
