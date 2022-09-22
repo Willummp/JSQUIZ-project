@@ -5,6 +5,7 @@ var jogadores_1 = require("./jogadores");
 var showMenu_1 = require("./showMenu");
 var Music_1 = require("./Music");
 var PerguntasRespostas_1 = require("./PerguntasRespostas");
+var inicioJogo_1 = require("./inicioJogo");
 try {
     var prompt_1 = PromptSync();
     //Objetos - Instâncias das Classes
@@ -55,6 +56,7 @@ try {
             case 1:
                 var nomeJogador = prompt_1(' Digite seu nome: ');
                 var jogador = new jogadores_1.Jogador(nomeJogador);
+                (0, inicioJogo_1.começoJogo)();
                 break;
             case 2:
                 //music.playSound(option);
