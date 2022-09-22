@@ -1,6 +1,6 @@
 import { Jogador } from "./jogadores";
 
-class PerguntasRespostas extends Jogador{
+export class PerguntasRespostas{
     public perguntas: [];
     public respostas: [];
     
