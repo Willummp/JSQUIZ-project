@@ -77,7 +77,7 @@ console.clear();
 console.log('========== Questão 3 ==========\n');
 console.log('O que as matrizes armazenam?\n');
 console.log('1) Deletam informações de uma lista');
-console.log('2) Armazenam apenas uma informação.');
+console.log('2) Armazenam apenas uma informação.\n');
 console.log('3) Armazenam várias informações em várias dimensões.\n');
 
 let opcao3 = Number(prompt('>>'));

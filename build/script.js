@@ -26,6 +26,7 @@ try {
             case 2:
                 //music.playSound(option);
                 new Music_1.Music();
+                (0, showMenu_1.showMenu)();
                 break;
             case 3:
                 console.log('GAME OVER');
