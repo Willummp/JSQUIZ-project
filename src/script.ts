@@ -9,17 +9,10 @@ const prompt = PromptSync();
 
 //Objetos - Instâncias das Classes
 //const music = new Music();
-// const perguntas = new PerguntasRespostas();
-// const respostas = new PerguntasRespostas();
-
-//Banco de Dados das Perguntas e Respostas
-// perguntas.perguntas = [];//Armazenar As Perguntas
-// respostas.respostas = [];//Armazenar As Respostas
-
 //music.filePath = './musicas/trilha-sonora.mp3'; //Caminho do Diretório da Trilha Sonora do Jogo
 
 let option = 0;
-        
+
 do {
     console.clear();
     showMenu();
@@ -29,9 +22,11 @@ do {
 
     switch (option){
         case 1:
-            const nomeJogador = prompt(' Digite seu nome: ');
-            const jogador = new Jogador (nomeJogador);
+            //console.log('Carregando...');
+            console.clear();
             PergEResp();
+            console.clear();
+            prompt('\n');
         break;
 
         case 2:
@@ -48,7 +43,7 @@ do {
 }while (option > 0 && option != 3);
 } catch (error) {
     //Caso Ocorra Algum Erro
-    console.log(`Opss! Algo de errado aconteceu, tente novamente mais tarde :(\n${error}`);
+    console.log(`Opss! Algo de errado aconteceu, tente novamente mais tarde.\n${error}`);
     showMenu();
 }
-//TODO : usar o finally
+//TODO: usar o finally
