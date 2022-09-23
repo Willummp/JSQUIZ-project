@@ -1,1 +1,1 @@
-<img src="" alt="My cool logo"/>
+<img src="./img/jsimg.png" alt="JSQUIZimg"/>
